@@ -1,0 +1,40 @@
+### 메인. 전체 조회
+GET http://localhost:8080/
+
+### 값 추가1
+POST http://localhost:8080/
+Content-Type: application/json
+
+{
+  "title": "테스트1",
+  "order": 100,
+  "completed": false
+}
+
+### 값 추가2
+POST http://localhost:8080/
+Content-Type: application/json
+
+{
+  "title": "테스트2",
+  "order": 200,
+  "completed": true
+}
+
+### 단건 조회
+GET http://localhost:8080/1
+
+### 단건 삭제
+DELETE http://localhost:8080/1
+
+### 단건 수정
+PATCH http://localhost:8080/2
+Content-Type: application/json
+
+{
+  "title" : "테스트54",
+  "completed": true
+}
+
+### 전체 삭제
+DELETE http://localhost:8080/
